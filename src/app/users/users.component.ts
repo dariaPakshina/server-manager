@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { UserComponent } from './user/user.component';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-users',
   standalone: true,
-  imports: [],
+  imports: [UserComponent, NgFor],
   templateUrl: './users.component.html',
   styleUrl: './users.component.css',
 })

@@ -9,7 +9,7 @@ import { ServersService } from '../servers.service';
   styleUrl: './server.component.css',
 })
 export class ServerComponent implements OnInit {
-  server: { id: number; name: string; status: string };
+  server: { id: number; name: string; status: string } | any;
 
   constructor(private serversService: ServersService) {}
 

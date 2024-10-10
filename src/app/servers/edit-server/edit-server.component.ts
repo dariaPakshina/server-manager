@@ -1,15 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ServersService } from '../servers.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-edit-server',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './edit-server.component.html',
   styleUrl: './edit-server.component.css',
 })
 export class EditServerComponent implements OnInit {
-  server: { id: number; name: string; status: string };
+  server: { id: number; name: string; status: string } | any;
   serverName = '';
   serverStatus = '';
 
